@@ -18,6 +18,10 @@ Projeto desenvolvido durante o Bootcamp Imersão 17 da FullCycle em 2024. Consis
     - _Resumo:_ `FRONT-END com NextJS aproveitando as vantagens do server-side components e cache`
     - Front-end desenvolvido em **NodeJS** com **TypeScript** e framework **NextJS** com **Material Design/UI**.
 	- Foi implementado _server components_ e _client components_, além de classes de serviço e as _server actions_.
+- `/payment`: 
+    - _Resumo:_ `Microserviço para processar pagamentos`
+    - Microserviço desenvolvido na linguagem **GO** que realiza o processamento de pagamentos com base nas filas no `RabbitMQ`.
+    - Foi utilizado o **Docker** com container do **RabbitMQ** para consumir e publicar mensagens na fila para outros microserviços.
 
 ### Detalhes:
 
@@ -29,6 +33,29 @@ As instruções para executar se encontram no `README.md` de cada subpasta.
 1. nestjsapi
 1. payment-service
 1. nextjs-frontend
+
+- Executando o projeto:
+
+```sh
+## Levantando a GO API:
+cd goapi
+docker compose up -d
+go run ./cmd/catalog/main.go
+
+## Levantando a NEST JS API:
+cd nestjsapi
+docker compose up -d
+npm run fixture
+npm run start:dev
+
+## Levantando o NEXT JS FRONTEND:
+cd nextjs-frontend
+npm run dev
+
+## Levantando o MSVC PAYMENT: 
+## (obs: não precisa levantar novo container para o RabbitMQ com o docker aqui não)
+cd cmd/payment && go run main.go
+```
 
 ### 📝 Licença
 
