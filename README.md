@@ -57,6 +57,13 @@ npm run dev
 cd cmd/payment && go run main.go
 ```
 
+![filas-rabbitmq-01](https://github.com/paulopitta97/fullcycle-imersao17/assets/52472087/7de88f42-cc0a-4777-b6f7-fdd78198e0d0)
+
+![filas-rabbitmq-02-orders](https://github.com/paulopitta97/fullcycle-imersao17/assets/52472087/ca19ecef-1d9e-4232-8e8d-d7d99abcfa9b)
+
+![filas-rabbitmq-03-payments](https://github.com/paulopitta97/fullcycle-imersao17/assets/52472087/08e5c1cd-2582-4ddb-b765-bf032b8feae2)
+
+
 ### 📝 Licença
 
 - [MIT](https://github.com/paulopitta97/fullcycle-imersao17/blob/master/LICENSE) © [Paulo Pitta](https://github.com/paulopitta97)
