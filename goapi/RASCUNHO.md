@@ -39,3 +39,8 @@
 - Instalar a extensão REST Client >> https://marketplace.visualstudio.com/items?itemName=humao.rest-client
 
 ##### Vídeo: https://www.youtube.com/watch?v=WCsVUYXeBUA
+
+7- Apagando o banco de dados:
+
+`sudo rm -rf ./.docker/mysql`
+`docker compose down` para destruir o container do docker.
