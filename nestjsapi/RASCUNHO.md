@@ -57,3 +57,7 @@
     - Routing key: `OrderCreated`
 
 ##### Vídeo: https://www.youtube.com/watch?v=A6dYq1ce34o
+
+4. O `eager: true` nas entidades faz com que já carregue os dados da entidadade relacionada.
+
+5. Com o Decorator `RabbitSubscribe` automaticamente cria a fila e configura no RabbitMQ.
