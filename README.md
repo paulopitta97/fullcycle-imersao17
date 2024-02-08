@@ -10,6 +10,9 @@ Projeto desenvolvido durante o Bootcamp Imersão 17 da FullCycle em 2024. Consis
 - `/nestjsapi`: 
     - API REST desenvolvida em **NodeJS** com **TypeScript** e framework **NestJS** com **TypeORM**. 
     - Foi utilizado o **Docker** para container do banco de dados MySQL e também o **RabbitMQ** para publicar mensagens na fila para outros microserviços.
+- `/nextjs-frontend`: 
+    - Front-end desenvolvido em **NodeJS** com **TypeScript** e framework **NextJS** com **Material Design/UI**.
+	- Foi implementado _server components_ e _client components_, além de classes de serviço e as _server actions_.
 
 ### Detalhes:
 
