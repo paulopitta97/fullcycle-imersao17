@@ -45,23 +45,37 @@ go run ./cmd/catalog/main.go
 ## Levantando a NEST JS API:
 cd nestjsapi
 docker compose up -d
+npm install
 npm run fixture
 npm run start:dev
 
 ## Levantando o NEXT JS FRONTEND:
 cd nextjs-frontend
+npm install
 npm run dev
+npx serve -l 9000 images
 
 ## Levantando o MSVC PAYMENT: 
 ## (obs: não precisa levantar novo container para o RabbitMQ com o docker aqui não)
-cd cmd/payment && go run main.go
+cd ./payment/cmd/payment && go run main.go
 ```
+
+<details open>
+ <summary>Imagem da Aplicação</summary>
+
+ ![imagem-projeto](https://github.com/paulopitta97/fullcycle-imersao17/assets/52472087/1ce1d7ca-0ec9-4ed1-a762-63f9b986f7db)
+</details>
+
+<details>
+ <summary>Configuração RabbitMQ</summary>
 
 ![filas-rabbitmq-01](https://github.com/paulopitta97/fullcycle-imersao17/assets/52472087/7de88f42-cc0a-4777-b6f7-fdd78198e0d0)
 
 ![filas-rabbitmq-02-orders](https://github.com/paulopitta97/fullcycle-imersao17/assets/52472087/ca19ecef-1d9e-4232-8e8d-d7d99abcfa9b)
 
 ![filas-rabbitmq-03-payments](https://github.com/paulopitta97/fullcycle-imersao17/assets/52472087/08e5c1cd-2582-4ddb-b765-bf032b8feae2)
+
+</details>
 
 
 ### 📝 Licença
